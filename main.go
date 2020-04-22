@@ -12,7 +12,7 @@ import (
 func main() {
 	hostName := "google.com"
 	portNum := "80"
-	seconds := 2
+	seconds := 3
 	timeOut := time.Duration(seconds) * time.Second
 	log.Print("Application started minimize the application and do your work")
 	for  {
@@ -22,7 +22,7 @@ func main() {
 			notify.Notification()
 			return
 		}
-		time.Sleep(50 * time.Millisecond)
+		time.Sleep(2 * time.Second)
 	}
 
 }
