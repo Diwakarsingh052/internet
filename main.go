@@ -22,7 +22,7 @@ func main() {
 			notify.Notification()
 			return
 		}
-		time.Sleep(1 * time.Second)
+		time.Sleep(2 * time.Second)
 	}
 
 }
