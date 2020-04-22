@@ -7,12 +7,12 @@ import (
 )
 
 func Notification() {
-	mydir, _ := os.Getwd()
+	myDir, _ := os.Getwd()
 	notification := toast.Notification{
 		AppID:   "Internet Lost",
 		Title:   "Internet Lost",
 		Message: "Wifi Signal Lost",
-		Icon:    mydir+`\emergency.png`, // This file must exist (remove this line if it doesn't)
+		Icon:    myDir+`\emergency.png`, // This file must exist (remove this line if it doesn't)
 		Actions: []toast.Action{
 			{"protocol", "Dismiss", ""},
 		},
